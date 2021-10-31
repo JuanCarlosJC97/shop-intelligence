@@ -1,0 +1,15 @@
+.modalBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images{
+    height: 6rem;
+    width: 6rem;
+}
+h4{
+    padding: 1.5rem;
+}
+p{
+    padding: 1.5rem;
+}

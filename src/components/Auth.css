@@ -1,0 +1,85 @@
+/* Globals style */
+.auth{
+    background-color: #34495E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+.body{
+    font-family: 'PT Sans', sans-serif; /* 'Roboto Condensed', sans-serif */;
+    display: flex;
+    justify-content: center;
+
+}
+.Container{ 
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 50px;
+    height: 32rem;
+    width: 35rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* box-shadow: 10px 10px 15px #77acf2; */
+}
+.logo{
+    padding: 10px;
+    height: 7rem;
+    width: 12rem;
+}
+.title{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user > .mb-3{
+
+    width: 28rem;
+    /* box-shadow: 2px 2px 10px #77acf2; */
+}
+/* .passReset{
+    height: fit-content;
+    width: fit-content;
+} */
+.send-info{
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.send-info > .mb-3{
+    background-color: #577FB3;
+    width: 8.5rem;
+    height: 3rem;
+    /* box-shadow: 2px 2px 10px #577FB3; */
+}
+/* End Globals style */
+/* monile style */
+@media (max-width: 550px) {
+    .Container{ 
+        background-color: #F5EFEF;
+        height: 28rem;
+        width: 20rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* box-shadow: 7px 7px 7px #767C77; */
+    }
+    .user > .mb-3{
+        height: auto;
+        width: 12.5rem;
+        /* box-shadow: 5px 5px 5px #7e837f; */
+    }
+}

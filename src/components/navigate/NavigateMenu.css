@@ -1,0 +1,13 @@
+.navbar {
+    font-family: 'Karla', sans-serif/* 'Roboto Condensed', sans-serif */;
+    background-color: #417dbf;
+}
+.toggle {
+    border-color: #000000;
+}
+.iconUser {
+    margin-bottom: 8px;
+}
+.contact{
+    margin-top: 3px;
+}
