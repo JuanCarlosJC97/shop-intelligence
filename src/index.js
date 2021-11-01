@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Auth title="Login" />
+    <Auth title="Accede a tu cuenta" />
     {/* <NewPassword title="Usuario"/> */}
 
   </React.StrictMode>,

@@ -5,12 +5,9 @@
   src: url('./fonts/PT_Sans/PTSans-Bold.ttf');
   src: url('./fonts/PT_Sans/PTSans-BoldItalic.ttf');
 }
-:root{
-  background-color: #34495E;
-}
+
 body {
-  background-color: #34495E;
-  font-family: 'PT Sans', sans-serif;
+  font-family: adobe-caslon-pro, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
