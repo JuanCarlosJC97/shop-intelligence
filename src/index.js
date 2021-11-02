@@ -2,18 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Auth from './components/Auth'
+import Register from './components/register/Register'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import NewPassword from './components/newPassword/NewPassword'
-/* const stants = [
-  { id: "stant-0", name: "Vinos y licores" },
-  { id: "stant-1", name: "Higiene Personal" },
-  { id: "stant-2", name: "Panaderia" },
-  { id: "stant-3", name: "Lacteos y cremeria" }
+/* const textos = [
+  { title: "Accede a tu cuenta", buttonUno: "Registrarse", buttonDos: "Iniciar Sesión", place1:"Nombre de usuario", place2: "Contraseña"}
 ]; */
-
+const textos = [
+  { title: "Registrate con nosotros", buttonUno: "Iniciar Sesión", buttonDos: "Registrarse", 
+  place1:"Nombre de usuario", place2: "Correo electronico", place3: "Contraseña"}
+];
 ReactDOM.render(
   <React.StrictMode>
-    <Auth title="Accede a tu cuenta" />
+    <Register texts={textos}/>
+    {/* <Auth texts={textos}/> */}
     {/* <NewPassword title="Usuario"/> */}
 
   </React.StrictMode>,

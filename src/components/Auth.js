@@ -13,12 +13,8 @@ import './Auth.css'
 
 
 export function Auth(props) {
-  const title = useState(props.title);
   const [modalShow, setModalShow] = React.useState(false);
 
-  /* function sendInfo() {
-    console.log('hola');
-  } */
 
   return (
     <div className="auth">
@@ -38,20 +34,21 @@ export function Auth(props) {
           </div>
         </div>
         <div className="login">
-          <div className="div-register" ><Button variant="secondary" className="mb-3">Registrarse</Button></div>
+          <div className="div-register" ><Button variant="secondary" className="mb-3">{props.texts[0].buttonUno}</Button></div>
           <Container className="Container" bsPrefix>
             <Image className="logo" src={logo} bsPrefix />
-            <label className="title">{title}</label>
+            <label className="title">{props.texts[0].title}</label>
             <Row className="user" bsPrefix>
               <>
-                <Form.Control type="email" className="mb-3" placeholder="Ingresa tu Correo" />
-                <Form.Control type="password" className="mb-3" placeholder="Password" />
+                <Form.Control type="email" className="mb-3" placeholder={props.texts[0].place1} />
+                <Form.Control type="password" className="mb-3" placeholder={props.texts[0].place2} />
               </>
             </Row>
             <Row className="send-info">
-              <Button className="passReset" variant="light" size="lg" >¿Olvidaste tu contraseña?</Button>
-              <Button variant="secondary" className="mb-3" onClick={() => { setModalShow(true) }}>
-                Iniciar Sesión
+              <slot name="slot2" />
+              <Button id="restarPass" className="passReset" variant="light" size="lg" >¿Olvidaste tu contraseña?</Button>
+              <Button id="" variant="secondary" className="mb-3" onClick={() => { setModalShow(true) }}>
+                {props.texts[0].buttonDos}
               </Button>
             </Row>
           </Container>
