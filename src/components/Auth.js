@@ -34,7 +34,7 @@ export function Auth(props) {
           </div>
         </div>
         <div className="login">
-          <div className="div-register" ><Button variant="secondary" className="mb-3">{props.texts[0].buttonUno}</Button></div>
+          <div className="div-register" ><Button variant="second" className="mb-3">{props.texts[0].buttonUno}</Button></div>
           <Container className="Container" bsPrefix>
             <Image className="logo" src={logo} bsPrefix />
             <label className="title">{props.texts[0].title}</label>
@@ -45,9 +45,8 @@ export function Auth(props) {
               </>
             </Row>
             <Row className="send-info">
-              <slot name="slot2" />
               <Button id="restarPass" className="passReset" variant="light" size="lg" >¿Olvidaste tu contraseña?</Button>
-              <Button id="" variant="secondary" className="mb-3" onClick={() => { setModalShow(true) }}>
+              <Button id="" variant="second" className="mb-3" onClick={() => { setModalShow(true) }}>
                 {props.texts[0].buttonDos}
               </Button>
             </Row>
