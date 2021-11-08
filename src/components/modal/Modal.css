@@ -1,15 +1,25 @@
-.modalBody{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal-content {
+  font-family: AdobeCaslonPro;
+  height: 90%;
+  border-radius: 30px;
+  border: solid 1px #000;
+  background-color: rgba(255, 255, 255, 0.411);  
 }
-.images{
-    height: 6rem;
-    width: 6rem;
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-h4{
-    padding: 1.5rem;
+.images {
+  height: 10rem;
+  width: 10rem;
 }
-p{
-    padding: 1.5rem;
+h1 {
+  font-size: 40px;
+  
+}
+p {
+  padding: 1.5rem;
+  font-size: 40px;
+  letter-spacing: -1px;
 }

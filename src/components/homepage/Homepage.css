@@ -1,0 +1,65 @@
+.home {
+  background-color: #696969;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav {
+  width: 100%;
+  height: 150px;
+}
+.logo-image {
+  height: 100px;
+  width: 200px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 60%;
+}
+.menu > .mb-3 {
+  width: 159px;
+  height: 38px;
+  font-size: 26px;
+  letter-spacing: -0.72px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 32px 12px 35px;
+}
+
+.icons {
+  height: 100%;
+  width: 10%;
+}
+/*.elipses {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 200px;
+}
+.Ellipse-3 {
+  width: 600px;
+  height: 1000px;
+  margin: 10px 72.4px 0 35px;
+  transform: rotate(25.95deg);
+  background-color: #ffd700;
+  border-radius: 400px;
+}
+.Ellipse-4 {
+  width: 600px;
+  height: 1000px;
+  margin: 10px 72.4px 0 35px;
+  transform: rotate(-30.05deg);
+  background-color: #ffd700;
+  border-radius: 400px;
+} */

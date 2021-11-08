@@ -1,19 +1,17 @@
 import React from 'react'
-import './RestorePass.css'
+import './RecoverAccount.css'
 import { FormControl, Image } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
 import MyModal from '../modal/MyModal';
 import Logo from '../../images/logo.png'
 
+const modalText = [{ title: "Tu contraseña se restableció", image: "error", modalP: "¡Exitosamente!" }];
 
-
-const modalText = [{title: "Tu correo se envio", image: "CheckValid", modalP: "¡Exitosamente!"}];
-
-export default function RestorePass() {
+export default function RecoverAccount() {
     const [modalShow, setModalShow] = React.useState(false);
     return (
-        <div className="restore">
+        <div className="recover">
             <div className="nav">
                 <div className="logo-head">
                     <Image className="logo" src={Logo} />
@@ -28,21 +26,26 @@ export default function RestorePass() {
             </div>
 
             <div className="body">
-                <div className="form-email">
+                <div className="form-user">
                     <div className="head-form">
-                        <h1>Restablecer Contraseña</h1>
+                        <h1>Recupera tu cuenta</h1>
                     </div>
                     <hr className="line" />
                     <div className="form">
-                        <FormControl id="formEmail" className="mb-3" type="email" variant="second" placeholder="Correo Electronico"></FormControl>
-                        <FormControl id="formEmail" className="mb-3" type="email" variant="second" placeholder="Confirmar Correo Electronico"></FormControl>
+                        <FormControl id="formEmail" className="mb-3" type="text" variant="second" placeholder="Nombre de Usuario" disabled></FormControl>
+                        <FormControl id="formEmail" className="mb-3" type="password" variant="second" placeholder="Nueva contraseña"></FormControl>
+                        <FormControl id="formEmail" className="mb-3" type="password" variant="second" placeholder="Confirmar contraseña"></FormControl>
                     </div>
                     <div className="buttons">
                         <Button id="button-login" className="mb-3-2" variant="second">Cancelar</Button>
-                        <Button id="button-login" className="mb-3" variant="second" onClick={() => { setModalShow(true) }}>Enviar</Button>
+                        <Button id="button-login" className="mb-3" variant="second" onClick={() => { setModalShow(true) }}>Guardar</Button>
                     </div>
                 </div>
+                <div className="link">
+                    <Button id="recoverPass" className="recoverPass" variant="links" size="lg" >Restablecer Contraseña</Button>
+                </div>
             </div>
+
 
             <div className="footer">
             </div>
