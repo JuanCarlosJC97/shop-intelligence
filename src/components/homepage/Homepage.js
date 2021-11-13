@@ -1,6 +1,6 @@
 import React from 'react';
 import './Homepage.css';
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import Logo2 from '../../images/logo2.svg'
 

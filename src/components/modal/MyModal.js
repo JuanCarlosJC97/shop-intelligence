@@ -7,7 +7,6 @@ import './Modal.css'
 
 
 function MyModal(props) {
-    console.log(props.contenido[0].image)
     const valid = props.contenido[0].image==='CheckValid'? CheckValid : CheckInValid
     return (
         <Modal {...props} className="modal" aria-labelledby="contained-modal-title-vcenter" centered>
