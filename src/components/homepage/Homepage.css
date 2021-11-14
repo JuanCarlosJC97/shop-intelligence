@@ -1,4 +1,5 @@
 .home {
+  font-family: adobe-caslon-pro, serif;
   background-color: #696969;
   display: flex;
   flex-direction: row;
@@ -16,6 +17,12 @@
 .nav {
   width: 100%;
   height: 150px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: space-between;
 }
 .logo-image {
   height: 100px;
@@ -25,7 +32,7 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 60%;
+  width: 70%;
 }
 .menu > .mb-3 {
   width: 159px;
@@ -38,8 +45,59 @@
 }
 
 .icons {
+  height: 65%;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.mark,
+.search,
+.shopCart {
+  height: 30px;
+  width: 30px;
+}
+.body {
+  width: 100%;
   height: 100%;
-  width: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+}
+
+.colum1 {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.text1 {
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  color: #fff;
+  margin-bottom: 35px;
+  line-height: 75%;
+}
+.text2 {
+  display: flex;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  text-align: center;
+  color: #fff;
+}
+.promo {
+  display: flex;
+  flex-direction: row;
+}
+.promoText{
+  width: 235px;
+  height: 290px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 /*.elipses {
   display: flex;
