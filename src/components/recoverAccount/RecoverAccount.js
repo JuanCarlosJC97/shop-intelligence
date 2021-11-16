@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap'
 import MyModal from '../modal/MyModal';
 import Logo from '../../images/logo.png'
 
-const modalText = [{ title: "Tu contraseña se restableció", image: "error", modalP: "¡Exitosamente!" }];
+const modalText = [{ title: "Tu contraseña se restableció", image: "CheckValid", modalP: "¡Exitosamente!" }];
 
 export default function RecoverAccount() {
     const [modalShow, setModalShow] = React.useState(false);

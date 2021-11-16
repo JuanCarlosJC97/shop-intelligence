@@ -11,6 +11,8 @@ import facebook from '../../images/icons8-facebook.svg'
 import instagram from '../../images/icons8-instagram.svg'
 import twitter from '../../images/icons8-twitter.svg'
 
+const modalText = [{title: "Te registraste", image: "CheckValid", modalP: "¡Exitosamente!"}];
+
 function Register(props) {
     const [modalShow, setModalShow] = React.useState(false);
 
@@ -57,6 +59,7 @@ function Register(props) {
             <MyModal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
+                contenido={modalText}
             />
         </div>
 
