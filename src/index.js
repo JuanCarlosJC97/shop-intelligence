@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import Auth from './components/Auth';
-// import Register from './components/register/Register';
-// import RestorePass from './components/restorePass/RestorePass';
-// import RecoverAccount from './components/recoverAccount/RecoverAccount';
-import Homepage from './components/homepage/Homepage'
+//import Auth from './components/Auth';
+//import Register from './components/register/Register';
+//import RestorePass from './components/restorePass/RestorePass';
+//import RecoverAccount from './components/recoverAccount/RecoverAccount';
+//import Homepage from './components/homepage/Homepage'
+
+import Products from './components/products/Products'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 /* const textos = [
   { title: "Accede a tu cuenta", buttonUno: "Registrarse", buttonDos: "Iniciar Sesión", place1:"Nombre de usuario", place2: "Contraseña"}
 ]; */
@@ -20,7 +25,9 @@ ReactDOM.render(
     {/* <Auth texts={textos}/> */}
     {/* <RestorePass /> */}
     {/* <RecoverAccount /> */}
-    <Homepage />
+    {/* <Homepage /> */}
+
+    <Products/>
 
   </React.StrictMode>,
   document.getElementById('root')

@@ -11,7 +11,7 @@ import instagram from '../images/icons8-instagram.svg'
 import twitter from '../images/icons8-twitter.svg'
 import './Auth.css'
 
-
+const modalText = [{title: "Tu correo se envio", image: "CheckValid", modalP: "¡Exitosamente!"}];
 export function Auth(props) {
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -56,6 +56,7 @@ export function Auth(props) {
       <MyModal
         show={modalShow}
         onHide={() => setModalShow(false)}
+        contenido={modalText}
       />
     </div>
   )

@@ -1,0 +1,129 @@
+.Mantener-Productos {
+    width: 1440px;
+    height: 1024px;
+    flex-grow: 0;
+    padding: 0 1px 0 17px;
+    background-color: #fff;
+  }
+
+  .Mantener-Productos {
+    width: 1440px;
+    height: 1024px;
+    padding: 0 1px 0 17px;
+    background-color: #fff;
+  }
+
+.Rectangle-1 {
+    width: 30px;
+    height: 50px;
+    margin: 20px 11px 0 0;
+    background-color: #ffd700;
+}
+
+.ARES {
+    width: 109px;
+    height: 28px;
+    margin: 31px 299px 11px 15px;
+    font-family: AdobeCaslonPro;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Inicio {
+    width: 119px;
+    height: 38px;
+    margin: 1px 25px 3px 0;
+    font-family: AdobeCaslonPro;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+    color: #000;
+  }
+
+  .Rectangle-9 {
+    width: 186px;
+    height: 39px;
+    margin: 0 5px 3px 31px;
+    border-radius: 50px;
+    background-color: #fee663;
+  }
+  .Cerrar-Sesin {
+    width: 197px;
+    height: 39px;
+    margin: 3px 0 0 25px;
+    font-family: AdobeCaslonPro;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #000;
+  }
+
+  .Catlogo-de-Productos {
+    width: 509px;
+    height: 57px;
+    margin: 51px 490px 70px 102px;
+    font-family: AdobeCaslonPro;
+    font-size: 55px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.1px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .Catlogo-de-Productos .text-style-1 {
+    color: #000;
+  }
+
+  .Rectangle-29 {
+    width: 30px;
+    height: 50px;
+    margin: 11px 313px 58px 50px;
+    background-color: #ffd700;
+  }
+
+  .SHOP {
+    width: 109px;
+    height: 28px;
+    margin: 11px 219px 69px 65px;
+    font-family: AdobeCaslonPro;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #fff;
+  }
+  
+.Rectangle-3 {
+    width: 1440px;
+    height: 1024px;
+    padding: 0 1px 0 17px;
+    background-color: #696969;
+}
+
+.Rectangle-28 {
+    width: 720px;
+    height: 1024px;
+    margin: 0 0 0 381px;
+    padding: 31px 19px 951px 360px;
+    background-color: #ffd700;
+}
