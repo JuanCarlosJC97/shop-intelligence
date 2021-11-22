@@ -1,116 +1,167 @@
-.restore {
+.restorePass {
   font-family: adobe-caslon-pro, serif;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
 }
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-.user {
-  display: flex;
-  flex-direction: row;
+.navbar{
+  height: 7.5rem;
 }
 .logo {
-  width: 234px;
-  height: 120px;
-  margin: 0 137px 0 40px;
+  width: 14rem;
+  height: 7rem;
+  padding: 0 0 0 1.5rem;
 }
-.user > .mb-3 {
-  width: 289px;
-  height: 57px;
-  border-radius: 20px;
-  border: solid 1px #000;
-  background-color: #fff;
-  font-size: 24px;
-  letter-spacing: -0.48px;
-  color: rgba(0, 0, 0, 0.5);
+#email,
+#pass {
+  width: 16rem;
+  height: 3rem;
+  border-radius: 1rem;
 }
-.button-header > .mb-3 {
-  width: 244px;
-  height: 57px;
-  border-radius: 50px;
-  background-color: #ffd700;
-  font-size: 36px;
-  letter-spacing: -0.72px;
-  text-align: center;
-  color: #000;
+#email {
+  margin: 0 2.5rem 0.5rem !important;
 }
-.footer {
-  width: 100%;
-  height: 74px;
+
+#button-login {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 3rem !important;
+  background-color: #ffd700 !important;
 }
-.body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 827px;
-  padding: 149px 274px 144px;
-  background-color: #ffd700;
+.justify-content-md-center {
+  background-color: #ffd700 !important;
+  padding: 2.5rem;
 }
-.form-email {
-  width: 892px;
-  height: 534px;
-  padding: 36px 24px 30px 19px;
-  border-radius: 30px;
-  background-color: #fff;
+
+.form-restore {
+  background-color: #ffffff;
 }
-.line {
-  width: 845px;
-  height: 3px;
-  background-color: #000000;
-  margin: 5px 0 47px 4px;
-  opacity: 1;
+.card {
+  height: 23rem !important;
+  width: 35rem !important;
+  border-radius: 2rem !important;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.title {
+  font-size: 2.5rem ;
 }
-.form > .mb-3 {
-  width: 407px;
-  margin: 19px 35px 29px 14px;
-  padding: 11px 80px 10px 12px;
-  border-radius: 50px;
-  background-color: rgba(225, 225, 225, 0.45);
-  font-size: 24px;
-  letter-spacing: -0.48px;
-  color: rgba(0, 0, 0, 0.5);
+.label-form {
+  padding: 0.3rem 0 0 0;
+  font-size: medium;
 }
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 95px 10px 10px 0;
+#formEmail,
+#formConfMail {
+  border-radius: 0 1.5rem 1.5rem 0;
 }
-.buttons > .mb-3-2 {
-  width: 183px;
-  height: 57px;
-  margin: 6px 18px 0 35px;
-  padding: 8px 17px 8px 18px;
-  border-radius: 50px;
-  border: solid 1px #737373;
-  background-color: #fff;
-  font-size: 36px;
-  letter-spacing: -0.72px;
-  text-align: center;
-  color: #000;
+.icon-form {
+  border-radius: 1.5rem 0 0 1.5rem !important;
 }
-.buttons > .mb-3 {
-  width: 183px;
-  height: 57px;
-  margin: 6px 27px 0 35px;
-  padding: 8px 17px 8px 9px;
-  border-radius: 50px;
-  border: solid 1px #737373;
-  background-color: #ffd700;
-  font-size: 36px;
-  letter-spacing: -0.72px;
-  text-align: center;
-  color: #000;
+
+#send {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 3rem !important;
+  background-color: #ffd700 !important;
+  color: #000000 !important;
+}
+#cancel {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 3rem !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+@media (max-width: 75rem) {
+  .navbar{
+    height: 5rem;
+  }
+  .logo {
+    width: 8rem;
+    height: 3.8rem;
+    padding: 0 0 0 1.5rem;
+  }
+  #email,
+  #pass {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  #button-login {
+    width: 12rem;
+    height: 2rem;
+    border-radius: 3rem !important;
+    background-color: #ffd700 !important;
+  }
+  .justify-content-md-center {
+    height: 32rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 56.25rem) {
+  .navbar{
+    height: 5rem;
+  }
+  .logo {
+    width: 6rem;
+    height: 2.5rem;
+  }
+  #email,
+  #pass {
+    width: 11rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  #email {
+    margin: 0 0.5rem 0 0.5rem !important;
+  }
+  #button-login {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 3rem !important;
+    background-color: #ffd700 !important;
+  }
+  .justify-content-md-center {
+    height: 32rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 47.938rem) {
+  .navbar{
+    height: 5rem;
+  }
+  .logo {
+    display: none;
+  }
+  #email,
+  #pass {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  #email {
+    margin: 0 0.5rem 0 0.5rem !important;
+  }
+  #button-login {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 3rem !important;
+    background-color: #ffd700 !important;
+  }
+  .card{
+    height: 20rem;
+    width: 30rem;
+  }
+  #send {
+    width: 7rem;
+    height: 2rem;
+    margin: 0 0 0 0;
+  }
+  #cancel {
+    width: 7rem;
+    height: 2rem;
+    margin: 0 0.2rem 0 1.1rem;
+  }
+  .justify-content-md-center {
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+  }
 }

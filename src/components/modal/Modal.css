@@ -1,9 +1,9 @@
 .modal-content {
   font-family: AdobeCaslonPro;
   height: 90%;
-  border-radius: 30px;
+  border-radius: 30px !important;
   border: solid 1px #000;
-  background-color: rgba(255, 255, 255, 0.411);  
+  background-color: rgba(255, 255, 255, 0.411);
 }
 .modalBody {
   display: flex;
@@ -16,10 +16,20 @@
 }
 h1 {
   font-size: 40px;
-  
 }
 p {
   padding: 1.5rem;
   font-size: 40px;
   letter-spacing: -1px;
+}
+
+@media (max-width: 75rem) {
+}
+@media (max-width: 56.25rem) {
+}
+@media (max-width: 47.938rem) {
+  .modal-content {
+    border-radius: 30px !important;
+    border: solid 1px #000;
+  }
 }

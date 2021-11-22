@@ -16,6 +16,24 @@ export function Auth(props) {
   const [modalShow, setModalShow] = React.useState(false);
 
 
+  function componentDidMount() {
+    const dataUser = { name: 'juan', apellido: 'campos' };
+
+    fetch('http://localhost:3001/users', {
+      method: 'POST',
+      mode: 'cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(dataUser)
+    })
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      });
+  }
+
+
   return (
     <div className="auth">
       <div className="body">
@@ -46,7 +64,7 @@ export function Auth(props) {
             </Row>
             <Row className="send-info">
               <Button id="restarPass" className="passReset" variant="light" size="lg" >¿Olvidaste tu contraseña?</Button>
-              <Button id="" variant="second" className="mb-3" onClick={() => { setModalShow(true) }}>
+              <Button id="" variant="second" className="mb-3" onClick={() => { componentDidMount(); setModalShow(true) }}>
                 {props.texts[0].buttonDos}
               </Button>
             </Row>
