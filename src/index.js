@@ -9,8 +9,8 @@ import './index.css';
 //import Homepage from './components/homepage/Homepage'
 
 import Products from './components/products/Products'
-import Customers from './components/customers/Customers'
-import Cashiers from './components/cashiers/Cashiers'
+//import Customers from './components/customers/Customers'
+//import Cashiers from './components/cashiers/Cashiers'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,8 +31,8 @@ ReactDOM.render(
     {/* <RecoverAccount /> */}
     {/* <Homepage /> */}
 
-    {/* <Products/> */}
-    <Customers/>
+    <Products/>
+    {/* <Customers/> */}
     {/* <Cashiers/> */}
 
   </React.StrictMode>,
