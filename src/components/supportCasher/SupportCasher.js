@@ -1,20 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
-import Logo from '../../images/logo2.svg'
+import FormModalCashers from '../forms/formModalCashers/FormModalCashers';
 import Table from 'react-bootstrap/Table'
+import Logo from '../../images/logo2.svg'
 import Casher from '../../images/casher.jpg'
 import './SupportCasher.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
-export default function SupportCasher() {
-    return (
 
+
+export default function SupportCasher(props) {
+    const [show, setShow] = useState(false);
+    return (
         <Container className="supportCasher">
             <Row>
-                <Col  md={4} lg={4}>
+                <Col md={4} lg={4}>
                     <Image className="logo" src={Logo}></Image>
                 </Col >
                 <Col className="title" sm={6} md={4} lg={4}>
@@ -27,7 +30,7 @@ export default function SupportCasher() {
             </Row>
             <Row className="justify-content-md-end">
                 <Col lg={11}>
-                    <Button className="mb-3 add-casher" variant="light">Nuevo Cajero <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
+                    <Button className="mb-3 add-casher" variant="light" onClick={() => { setShow(true) }}>Nuevo Cajero <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
                 </Col>
             </Row>
             <Row>
@@ -69,6 +72,10 @@ export default function SupportCasher() {
                     <Image className="img-casher" src={Casher} roundedCircle></Image>
                 </Col>
             </Row>
-        </Container>
+            <FormModalCashers
+                show={show}
+                onHide={() => setShow(false)}
+            />
+        </Container >
     )
 }
