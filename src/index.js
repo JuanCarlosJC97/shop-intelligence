@@ -6,11 +6,10 @@ import './index.css';
 // import RestorePass from './components/restorePass/RestorePass';
 // import RecoverAccount from './components/recoverAccount/RecoverAccount';
 // import Homepage from './components/homepage/HomepageAdmin'
-import SupportCasher from './components/supportCasher/SupportCasher';
+// import SupportCasher from './components/supportCasher/SupportCasher';
 // import SupportProduct from './components/supportProduct/SupportProduct';
-// import SupportCustomer from './components/supportCustomer/SupportCustomer';
+import SupportCustomer from './components/supportCustomer/SupportCustomer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SupportClient from './components/supportClient/SupportClient';
 
 
 {/* datods para la pantalla de auth 
@@ -30,9 +29,9 @@ ReactDOM.render(
     {/* <RestorePass /> */}
     {/* <RecoverAccount /> */}
     {/* <Homepage />  */}
-    <SupportCasher />
+    {/* <SupportCasher /> */}
     {/* <SupportProduct /> */}
-    {/* <SupportCustomer /> */}
+    <SupportCustomer />
 
   </React.StrictMode>,
   document.getElementById('root')

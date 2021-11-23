@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
+import FormModalProduct from '../forms/formModalProduct/FormModalProduct'
 import Logo from '../../images/logo2.svg'
 import Table from 'react-bootstrap/Table'
 import Products from '../../images/products.jpg'
@@ -10,11 +11,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function SupportProduct() {
+    const [show, setShow] = useState(false);
     return (
 
         <Container className="supportProduct">
             <Row>
-                <Col  md={4} lg={4}>
+                <Col md={4} lg={4}>
                     <Image className="logo" src={Logo}></Image>
                 </Col >
                 <Col className="title" sm={6} md={4} lg={4}>
@@ -27,7 +29,7 @@ export default function SupportProduct() {
             </Row>
             <Row className="justify-content-md-end">
                 <Col lg={11}>
-                    <Button className="mb-3 add-product" variant="light">Nuevo Producto <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
+                    <Button className="mb-3 add-product" variant="light" onClick={() => {setShow(true) }}>Nuevo Producto <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
                 </Col>
             </Row>
             <Row>
@@ -71,6 +73,10 @@ export default function SupportProduct() {
                     <Image className="img-product" src={Products} roundedCircle></Image>
                 </Col>
             </Row>
+            <FormModalProduct
+                show={show}
+                onHide={() => setShow(false)}
+            />
         </Container>
     )
 }
