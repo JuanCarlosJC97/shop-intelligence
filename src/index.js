@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 //import Auth from './components/Auth';
 //import Register from './components/register/Register';
 //import RestorePass from './components/restorePass/RestorePass';
@@ -8,6 +9,8 @@ import './index.css';
 //import Homepage from './components/homepage/Homepage'
 
 import Products from './components/products/Products'
+import Customers from './components/customers/Customers'
+import Cashiers from './components/cashiers/Cashiers'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,6 +22,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   { title: "Registrate con nosotros", buttonUno: "Iniciar Sesión", buttonDos: "Registrarse", 
   place1:"Nombre de usuario", place2: "Correo electronico", place3: "Contraseña"}
 ]; */
+
 ReactDOM.render(
   <React.StrictMode>
     {/* <Register texts={textos}/> */}
@@ -27,7 +31,9 @@ ReactDOM.render(
     {/* <RecoverAccount /> */}
     {/* <Homepage /> */}
 
-    <Products/>
+    {/* <Products/> */}
+    <Customers/>
+    {/* <Cashiers/> */}
 
   </React.StrictMode>,
   document.getElementById('root')

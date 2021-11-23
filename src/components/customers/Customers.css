@@ -1,0 +1,1124 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Mantener-Clientes {
+    /*flex-grow: 0;*/
+    width: 100%;
+    height: 100%;
+    /*width: 1440px;
+    height: 1024px;*/
+    background-color: #fff;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 1920px){
+    /*MITAD GRIS*/
+  .Rectangle-3 {
+    /*width: 1440px;
+    height: 1024px;*/
+    width: 100%;
+    height: 100%;
+    /*padding: 0 1px 0 17px;*/
+    background-color: #696969;
+    position: absolute;
+  }
+  
+  /*MITAD AMARILLA*/
+  .Rectangle-28 {
+    /*width: 720px;
+    height: 1024px;*/
+    width: 50%;
+    height: 100%;
+    /*margin: 0 0 0 381px;
+    padding: 31px 19px 951px 360px;*/
+    margin-left: 50%;
+    background-color: #ffd700;
+    position: absolute;
+  }
+    
+    /*PALABRA ARES*/
+  .Rectangle-1 {
+    width: 1.875rem;
+    height: 3.125rem;
+    margin-top: 1.25rem;
+    margin-left: 1.063rem;
+    background-color: #ffd700;
+    position: absolute;
+  }
+  .ARES {
+    width: 6.813rem;
+    height: 1.75rem;
+    /*margin: 31px auto auto 32px;*/
+    margin-top: 1.938rem;
+    margin-left: 2.1rem;
+    font-family: AdobeCaslonPro;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+  }
+  
+  /*PALABRA SHOP*/
+  .Rectangle-29 {
+    width: 1.875rem;
+    height: 3.125rem;
+    /*margin: 70px auto auto 97px;*/
+    margin-top: 4.375rem;
+    margin-left: 6rem;
+    background-color: #ffd700;
+    position: absolute;
+  }
+  .SHOP {
+    width: 6.813rem;
+    height: 1.75rem;
+    /*margin: 81px auto auto 112px;*/
+    margin-top: 5.063rem;
+    margin-left: 6.93rem;
+    font-family: AdobeCaslonPro;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+  }
+  
+  
+  /*PALABRAS CATALOGO DE Clientes*/
+  .Catlogo-de-Clientes {
+    width: 31.813rem;
+    height: 3.563rem;
+    /*margin: 44.8px auto auto 440px;*/
+    /*margin-top: 51px;*/
+    margin-top: 2.8rem;
+    margin-left: 24.5rem;
+    font-family: AdobeCaslonPro;
+    font-size: 55px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.1px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+  }
+  .Catlogo-de-Clientes .text-style-1 {
+    color: #000;
+  }
+  
+  
+  /*PALABRA INICIO*/
+  .Inicio {
+    width: 7.438rem;
+    height: 2.375rem;
+    /*margin: 32px 1000px auto auto;*/
+    margin-top: 2rem;
+    /*margin-right: 241px;*/
+    margin-left: 62.5rem;
+    font-family: AdobeCaslonPro;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+  }
+  
+  
+  /*BOTON CERRAR SESION*/
+  .Rectangle-9 {
+    width: 11.625rem;
+    height: 2.438rem;
+    /*margin: 31px 24px auto 1150px;*/
+    margin-top: 1.938rem;
+    /*margin-right: 24px;*/
+    margin-left: 71.875rem;
+    border-radius: 50px;
+    background-color: #fee663;
+    position: absolute;
+  }
+  .Cerrar-Sesin {
+    width: 12.313rem;
+    height: 2.438rem;
+    /*margin: 34px 19px auto 1144px;*/
+    margin-top: 2.125rem;
+    /*margin-right: 19px;*/
+    margin-left: 71.5rem;
+    font-family: AdobeCaslonPro;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+  }
+  
+  
+  /* CLIENTE NUEVO */
+  .Rectangle-36 {
+    width: 15.063rem;
+    height: 3rem;
+    margin-top: 13rem;
+    margin-left: 6.063rem;
+    position: absolute;
+    background-color: #fff;
+  }
+  .Cliente-Nuevo {
+    width: 16.688rem;
+    height: 2.438rem;
+    /* margin: 67px 115px 42px 11px; */
+    margin-top: 13rem;
+    margin-left: 6.25rem;
+    font-family: AdobeCaslonPro;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    position: absolute;
+    color: #000;
+  }
+  }
+  
+  @media screen and (max-width: 1280px){
+    /*MITAD GRIS*/
+  .Rectangle-3 {
+    /*width: 1440px;
+    height: 1024px;*/
+    width: 100%;
+    height: 650px;
+    /*padding: 0 1px 0 17px;*/
+    background-color: #696969;
+    position: absolute;
+  }
+  
+  /*MITAD AMARILLA*/
+  .Rectangle-28 {
+    /*width: 720px;
+    height: 1024px;*/
+    width: 50%;
+    height: 650px;
+    /*margin: 0 0 0 381px;
+    padding: 31px 19px 951px 360px;*/
+    margin-left: 50%;
+    background-color: #ffd700;
+    position: absolute;
+  }
+    
+    /*PALABRA ARES*/
+    .Rectangle-1 {
+      width: 1.875rem;
+      height: 3.125rem;
+      margin-top: 1.25rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .ARES {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 31px auto auto 32px;*/
+      margin-top: 1.938rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+    /*PALABRA SHOP*/
+    .Rectangle-29 {
+      width: 1.875rem;
+      height: 3.125rem;
+      /*margin: 70px auto auto 97px;*/
+      margin-top: 4.375rem;
+      margin-left: 6rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .SHOP {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 81px auto auto 112px;*/
+      margin-top: 5.063rem;
+      margin-left: 6.93rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+  
+    /*PALABRAS CATALOGO DE Clientes*/
+    .Catlogo-de-Clientes {
+      width: 30rem;
+      height: 3.563rem;
+      /*margin: 44.8px auto auto 440px;*/
+      /*margin-top: 51px;*/
+      margin-top: 2.8rem;
+      margin-left: 21.7rem;
+      font-family: AdobeCaslonPro;
+      font-size: 55px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.1px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+    }
+    .Catlogo-de-Clientes .text-style-1 {
+      color: #000;
+    }
+  
+  
+    /*PALABRA INICIO*/
+    .Inicio {
+      width: 7.438rem;
+      height: 2.375rem;
+      /*margin: 32px 1000px auto auto;*/
+      margin-top: 2rem;
+      /*margin-right: 241px;*/
+      margin-left: 58rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /*BOTON CERRAR SESION*/
+    .Rectangle-9 {
+      width: 11.625rem;
+      height: 2.438rem;
+      /*margin: 31px 24px auto 1150px;*/
+      margin-top: 1.938rem;
+      /*margin-right: 24px;*/
+      margin-left: 65.5rem;
+      border-radius: 50px;
+      background-color: #fee663;
+      position: absolute;
+    }
+    .Cerrar-Sesin {
+      width: 12.313rem;
+      height: 2.438rem;
+      /*margin: 34px 19px auto 1144px;*/
+      margin-top: 2.125rem;
+      /*margin-right: 19px;*/
+      margin-left: 65.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /* Cliente NUEVO */
+    .Rectangle-36 {
+      width: 15.063rem;
+      height: 3rem;
+      margin-top: 13rem;
+      margin-left: 6.063rem;
+      position: absolute;
+      background-color: #fff;
+    }
+    .Cliente-Nuevo {
+      width: 16.688rem;
+      height: 2.438rem;
+      /* margin: 67px 115px 42px 11px; */
+      margin-top: 13rem;
+      margin-left: 6.25rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      position: absolute;
+      color: #000;
+    }
+  }
+  
+  @media screen and (max-width: 1199px){
+    /*PALABRA ARES*/
+    .Rectangle-1 {
+      width: 1.875rem;
+      height: 3.125rem;
+      margin-top: 1.25rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .ARES {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 31px auto auto 32px;*/
+      margin-top: 1.938rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+    /*PALABRA SHOP*/
+    .Rectangle-29 {
+      width: 1.875rem;
+      height: 3.125rem;
+      /*margin: 70px auto auto 97px;*/
+      margin-top: 4.375rem;
+      margin-left: 6rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .SHOP {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 81px auto auto 112px;*/
+      margin-top: 5.063rem;
+      margin-left: 6.93rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+  
+    /*PALABRAS CATALOGO DE Clientes*/
+    .Catlogo-de-Clientes {
+      width: 27rem;
+      height: 2rem;
+      /*margin: 44.8px auto auto 440px;*/
+      /*margin-top: 51px;*/
+      margin-top: 2.8rem;
+      margin-left: 22.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 55px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.1px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+    }
+    .Catlogo-de-Clientes .text-style-1 {
+      color: #000;
+    }
+  
+  
+    /*PALABRA INICIO*/
+    .Inicio {
+      width: 7.438rem;
+      height: 2.375rem;
+      /*margin: 32px 1000px auto auto;*/
+      margin-top: 2rem;
+      /*margin-right: 241px;*/
+      margin-left: 51.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /*BOTON CERRAR SESION*/
+    .Rectangle-9 {
+      width: 11.625rem;
+      height: 2.438rem;
+      /*margin: 31px 24px auto 1150px;*/
+      margin-top: 1.938rem;
+      /*margin-right: 24px;*/
+      margin-left: 60rem;
+      border-radius: 50px;
+      background-color: #fee663;
+      position: absolute;
+    }
+    .Cerrar-Sesin {
+      width: 12.313rem;
+      height: 2.438rem;
+      /*margin: 34px 19px auto 1144px;*/
+      margin-top: 2.125rem;
+      /*margin-right: 19px;*/
+      margin-left: 60rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /* Cliente NUEVO */
+    .Rectangle-36 {
+      width: 15.063rem;
+      height: 3rem;
+      margin-top: 13rem;
+      margin-left: 6.063rem;
+      position: absolute;
+      background-color: #fff;
+    }
+    .Cliente-Nuevo {
+      width: 16.688rem;
+      height: 2.438rem;
+      /* margin: 67px 115px 42px 11px; */
+      margin-top: 13rem;
+      margin-left: 6.25rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      position: absolute;
+      color: #000;
+    }
+  }
+  
+  @media screen and (max-width: 991px){
+    /*PALABRA ARES*/
+    .Rectangle-1 {
+      width: 1.875rem;
+      height: 3.125rem;
+      margin-top: 1.25rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .ARES {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 31px auto auto 32px;*/
+      margin-top: 1.938rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+    /*PALABRA SHOP*/
+    .Rectangle-29 {
+      width: 1.875rem;
+      height: 3.125rem;
+      /*margin: 70px auto auto 97px;*/
+      margin-top: 4.375rem;
+      margin-left: 6rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .SHOP {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 81px auto auto 112px;*/
+      margin-top: 5.063rem;
+      margin-left: 6.93rem;
+      font-family: AdobeCaslonPro;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+  
+    /*PALABRAS CATALOGO DE Clientes*/
+    .Catlogo-de-Clientes {
+      width: 24rem;
+      height: 2rem;
+      /*margin: 44.8px auto auto 440px;*/
+      /*margin-top: 51px;*/
+      margin-top: 2.8rem;
+      margin-left: 16.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 45px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.1px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+    }
+    .Catlogo-de-Clientes .text-style-1 {
+      color: #000;
+    }
+  
+  
+    /*PALABRA INICIO*/
+    .Inicio {
+      width: 7.438rem;
+      height: 2.375rem;
+      /*margin: 32px 1000px auto auto;*/
+      margin-top: 2rem;
+      /*margin-right: 241px;*/
+      margin-left: 41.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 28px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /*BOTON CERRAR SESION*/
+    .Rectangle-9 {
+      width: 10rem;
+      height: 2rem;
+      /*margin: 31px 24px auto 1150px;*/
+      margin-top: 1.938rem;
+      /*margin-right: 24px;*/
+      margin-left: 48rem;
+      border-radius: 50px;
+      background-color: #fee663;
+      position: absolute;
+    }
+    .Cerrar-Sesin {
+      width: 12.313rem;
+      height: 2.438rem;
+      /*margin: 34px 19px auto 1144px;*/
+      margin-top: 2.125rem;
+      /*margin-right: 19px;*/
+      margin-left: 46.7rem;
+      font-family: AdobeCaslonPro;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /* Cliente NUEVO */
+    .Rectangle-36 {
+      width: 15.063rem;
+      height: 3rem;
+      margin-top: 13rem;
+      margin-left: 6.063rem;
+      position: absolute;
+      background-color: #fff;
+    }
+    .Cliente-Nuevo {
+      width: 16.688rem;
+      height: 2.438rem;
+      /* margin: 67px 115px 42px 11px; */
+      margin-top: 13rem;
+      margin-left: 6.25rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      position: absolute;
+      color: #000;
+    }
+  }
+  
+  @media screen and (max-width: 767px){
+    /*MITAD GRIS*/
+  .Rectangle-3 {
+    /*width: 1440px;
+    height: 1024px;*/
+    width: 100%;
+    height: 100%;
+    /*padding: 0 1px 0 17px;*/
+    background-color: #696969;
+    position: absolute;
+  }
+  
+  /*MITAD AMARILLA*/
+  .Rectangle-28 {
+    /*width: 720px;
+    height: 1024px;*/
+    width: 50%;
+    height: 100%;
+    /*margin: 0 0 0 381px;
+    padding: 31px 19px 951px 360px;*/
+    margin-left: 50%;
+    background-color: #ffd700;
+    position: absolute;
+  }
+  
+    /*PALABRA ARES*/
+    .Rectangle-1 {
+      width: 1.875rem;
+      height: 2.8rem;
+      margin-top: 1.25rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .ARES {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 31px auto auto 32px;*/
+      margin-top: 1.938rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+    /*PALABRA SHOP*/
+    .Rectangle-29 {
+      width: 1.875rem;
+      height: 2.8rem;
+      /*margin: 70px auto auto 97px;*/
+      margin-top: 4.375rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .SHOP {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 81px auto auto 112px;*/
+      margin-top: 5.063rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+  
+    /*PALABRAS CATALOGO DE Clientes*/
+    .Catlogo-de-Clientes {
+      width: 24rem;
+      height: 2rem;
+      /*margin: 44.8px auto auto 440px;*/
+      /*margin-top: 51px;*/
+      margin-top: 6rem;
+      margin-left: 10rem;
+      font-family: AdobeCaslonPro;
+      font-size: 37.5px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.1px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+    }
+    .Catlogo-de-Clientes .text-style-1 {
+      color: #000;
+    }
+  
+  
+    /*PALABRA INICIO*/
+    .Inicio {
+      width: 7.438rem;
+      height: 2.375rem;
+      /*margin: 32px 1000px auto auto;*/
+      margin-top: 2rem;
+      /*margin-right: 241px;*/
+      margin-left: 31.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /*BOTON CERRAR SESION*/
+    .Rectangle-9 {
+      width: 7.2rem;
+      height: 2rem;
+      /*margin: 31px 24px auto 1150px;*/
+      margin-top: 1.938rem;
+      /*margin-right: 24px;*/
+      margin-left: 37.5rem;
+      border-radius: 50px;
+      background-color: #fee663;
+      position: absolute;
+    }
+    .Cerrar-Sesin {
+      width: 7rem;
+      height: 2.438rem;
+      /*margin: 34px 19px auto 1144px;*/
+      margin-top: 2.125rem;
+      /*margin-right: 19px;*/
+      margin-left: 37.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /* Cliente NUEVO */
+    .Rectangle-36 {
+      width: 13rem;
+      height: 2.2rem;
+      margin-top: 13rem;
+      margin-left: 1.9rem;
+      position: absolute;
+      background-color: #fff;
+    }
+    .Cliente-Nuevo {
+      width: 15rem;
+      height: 2.438rem;
+      /* margin: 67px 115px 42px 11px; */
+      margin-top: 13rem;
+      margin-left: 2rem;
+      font-family: AdobeCaslonPro;
+      font-size: 25px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      position: absolute;
+      color: #000;
+    }
+  
+      /* TABLA */
+    .table{
+      font-size: 12.5px;
+      text-align: center;
+      margin-top: 18rem;
+      position: absolute;
+      background-color: #fff;
+    }
+  
+    /* IMAGEN */
+    .Ellipse-7 {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 575px){
+    /*MITAD GRIS*/
+  .Rectangle-3 {
+    /*width: 1440px;
+    height: 1024px;*/
+    width: 100%;
+    height: 100%;
+    /*padding: 0 1px 0 17px;*/
+    background-color: #696969;
+    position: absolute;
+  }
+  
+  /*MITAD AMARILLA*/
+  .Rectangle-28 {
+    /*width: 720px;
+    height: 1024px;*/
+    width: 50%;
+    height: 100%;
+    /*margin: 0 0 0 381px;
+    padding: 31px 19px 951px 360px;*/
+    margin-left: 50%;
+    background-color: #ffd700;
+    position: absolute;
+  }
+  
+    /*PALABRA ARES*/
+    .Rectangle-1 {
+      width: 1.875rem;
+      height: 2.8rem;
+      margin-top: 1.25rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .ARES {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 31px auto auto 32px;*/
+      margin-top: 1.938rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+    /*PALABRA SHOP*/
+    .Rectangle-29 {
+      width: 1.875rem;
+      height: 2.8rem;
+      /*margin: 70px auto auto 97px;*/
+      margin-top: 4.375rem;
+      margin-left: 1.063rem;
+      background-color: #ffd700;
+      position: absolute;
+    }
+    .SHOP {
+      width: 6.813rem;
+      height: 1.75rem;
+      /*margin: 81px auto auto 112px;*/
+      margin-top: 5.063rem;
+      margin-left: 2.1rem;
+      font-family: AdobeCaslonPro;
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: #fff;
+      position: absolute;
+    }
+  
+  
+    /*PALABRAS CATALOGO DE Clientes*/
+    .Catlogo-de-Clientes {
+      width: 11rem;
+      height: 2rem;
+      /*margin: 44.8px auto auto 440px;*/
+      /*margin-top: 51px;*/
+      margin-top: 5rem;
+      margin-left: 11.5rem;
+      font-family: AdobeCaslonPro;
+      font-size: 35px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.1px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+    }
+    .Catlogo-de-Clientes .text-style-1 {
+      color: #000;
+    }
+  
+  
+    /*PALABRA INICIO*/
+    .Inicio {
+      width: 5rem;
+      height: 2.375rem;
+      /*margin: 32px 1000px auto auto;*/
+      margin-top: 2rem;
+      /*margin-right: 241px;*/
+      margin-left: 21rem;
+      font-family: AdobeCaslonPro;
+      font-size: 21px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /*BOTON CERRAR SESION*/
+    .Rectangle-9 {
+      width: 6.6rem;
+      height: 2rem;
+      /*margin: 31px 24px auto 1150px;*/
+      margin-top: 1.938rem;
+      /*margin-right: 24px;*/
+      margin-left: 26.2rem;
+      border-radius: 50px;
+      background-color: #fee663;
+      position: absolute;
+    }
+    .Cerrar-Sesin {
+      width: 7rem;
+      height: 2.438rem;
+      /*margin: 34px 19px auto 1144px;*/
+      margin-top: 2.125rem;
+      /*margin-right: 19px;*/
+      margin-left: 26rem;
+      font-family: AdobeCaslonPro;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #000;
+      position: absolute;
+    }
+  
+  
+    /* Cliente NUEVO */
+    .Rectangle-36 {
+      width: 9rem;
+      height: 2rem;
+      margin-top: 15rem;
+      margin-left: 1.9rem;
+      position: absolute;
+      background-color: #fff;
+    }
+    .Cliente-Nuevo {
+      width: 9rem;
+      height: 2.438rem;
+      /* margin: 67px 115px 42px 11px; */
+      margin-top: 15rem;
+      margin-left: 2rem;
+      font-family: AdobeCaslonPro;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.6px;
+      position: absolute;
+      color: #000;
+    }
+  
+      /* TABLA */
+    .table{
+      font-size: 8px;
+      text-align: center;
+      margin-top: 18rem;
+      position: absolute;
+      background-color: #fff;
+    }
+  
+    /* IMAGEN */
+    .Ellipse-7 {
+      display: none;
+    }
+  }
+  
+  /* TABLA */
+  .table{
+    text-align: center;
+    margin-top: 18rem;
+    position: absolute;
+    background-color: #fff;
+  }
+  
+  /* IMAGEN */
+  .Ellipse-7 {
+    width: 150px;
+    height: 150px;
+    margin-top: 30rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+    position: absolute;
+  }
