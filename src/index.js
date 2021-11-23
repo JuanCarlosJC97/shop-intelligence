@@ -5,8 +5,10 @@ import './index.css';
 // import Register from './components/register/Register';
 // import RestorePass from './components/restorePass/RestorePass';
 // import RecoverAccount from './components/recoverAccount/RecoverAccount';
-import Homepage from './components/homepage/HomepageAdmin'
+// import Homepage from './components/homepage/HomepageAdmin'
+import SupportCasher from './components/supportCasher/SupportCasher';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 /* datods para la pantalla de auth */
 /* const textos = [
@@ -24,7 +26,8 @@ ReactDOM.render(
     {/* <Register texts={textos} /> */}
     {/* <RestorePass /> */}
     {/* <RecoverAccount /> */}
-    <Homepage /> 
+    {/* <Homepage />  */}
+    <SupportCasher />
 
   </React.StrictMode>,
   document.getElementById('root')

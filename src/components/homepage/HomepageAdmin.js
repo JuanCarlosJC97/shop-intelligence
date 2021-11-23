@@ -13,7 +13,7 @@ export default function HomepageAdmin() {
     return (
         <Container className="homeAdmin" fluid>
             <Row className="header">
-                <Col sm={3} md={4} lg={4}>
+                <Col sm={2} md={4} lg={4}>
                     <Image className="logo" src={Logo2}></Image>
                 </Col>
                 <Col className="title" xs={8} sm={7} md={4} lg={4}>

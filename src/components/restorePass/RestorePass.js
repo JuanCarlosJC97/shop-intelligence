@@ -27,9 +27,6 @@ export default function RestorePass() {
                 body: JSON.stringify({ email: email })
             })
                 .then(res => {
-                    return JSON.parse(res);
-                })
-                .then(res => {
                     console.log('el servicio respondio correcto', res)
                 })
                 .catch(err => {

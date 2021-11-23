@@ -1,8 +1,12 @@
 .homeAdmin {
+  min-height: 99.9vh !important;
+  min-width: 99.9vh !important;
   font-family: adobe-caslon-pro, serif;
   background-image: url("../../images/fondoadmin.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 99.9% 99.9%;
+
 }
 .logo {
   height: 5rem !important;
@@ -92,7 +96,7 @@ h1 {
   }
 }
 @media (max-width: 47.938rem) {
-  .header{
+  .header {
     height: 7.3rem;
   }
   .logo {
@@ -112,7 +116,7 @@ h1 {
     align-items: center;
     justify-content: flex-start;
   }
-  .title > h1{
+  .title > h1 {
     color: #ffffff;
   }
   .button-close {

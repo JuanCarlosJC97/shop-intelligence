@@ -1,4 +1,6 @@
 .restorePass {
+  min-height: 99.9vh !important;
+  min-width: 99.9vh !important;
   font-family: adobe-caslon-pro, serif;
 }
 .navbar{
