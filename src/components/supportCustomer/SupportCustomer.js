@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import FormModalClient from '../forms/formModalClient/FormModalClient'
-import Logo from '../../images/logo2.svg'
+import Logo from '../../images/logo.png'
 import Table from 'react-bootstrap/Table'
 import Customer from '../../images/customer.jpg'
 import './SupportCustomer.css'

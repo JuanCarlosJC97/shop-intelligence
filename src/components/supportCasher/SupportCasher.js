@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import FormModalCashers from '../forms/formModalCashers/FormModalCashers';
 import Table from 'react-bootstrap/Table'
-import Logo from '../../images/logo2.svg'
+import Logo from '../../images/logo.png'
 import Casher from '../../images/casher.jpg'
 import './SupportCasher.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

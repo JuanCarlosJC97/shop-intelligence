@@ -3,10 +3,10 @@ import './HomepageAdmin.css';
 import { Button } from 'react-bootstrap';
 import { Col, Container, Row } from 'react-bootstrap'
 import { Image } from 'react-bootstrap';
-import Logo2 from '../../images/logo2.svg';
+import Logo2 from '../../images/logo.png';
 import Casher from '../../images/casher.jpg'
-import Cliente from '../../images/cleinte.jpg'
-import Producto from '../../images/productos.jpg'
+import Cliente from '../../images/customer.jpg'
+import Producto from '../../images/products.jpg'
 
 export default function HomepageAdmin() {
 
@@ -14,7 +14,7 @@ export default function HomepageAdmin() {
         <Container className="homeAdmin" fluid>
             <Row className="header">
                 <Col sm={2} md={4} lg={4}>
-                    <Image className="logo" src={Logo2}></Image>
+                    <Image className="logo" src={Logo2} alt=""></Image>
                 </Col>
                 <Col className="title" xs={8} sm={7} md={4} lg={4}>
                     <h1> Administrar Catalogos</h1>
@@ -25,7 +25,7 @@ export default function HomepageAdmin() {
             </Row>
             <Row className="casher">
                 <Col xs={6} sm={6} md={4} lg={4}>
-                    <Image className="img-casher" src={Casher} roundedCircle></Image>
+                    <Image className="img-casher" src={Casher} roundedCircle alt=""></Image>
                 </Col>
                 <Col className="title-casher" xs={6} sm={6} md={4} lg={4}>
                     <h1> Catalogo de Cajeros</h1>
@@ -36,7 +36,7 @@ export default function HomepageAdmin() {
             </Row>
             <Row className="client">
                 <Col xs={6} sm={6} md={4} lg={4}>
-                    <Image className="img-casher" src={Cliente} roundedCircle></Image>
+                    <Image className="img-casher" src={Cliente} roundedCircle alt=""></Image>
                 </Col>
                 <Col className="title-client" xs={6} sm={6} md={4} lg={4}>
                     <h1> Catalogo de Clientes</h1>
@@ -47,7 +47,7 @@ export default function HomepageAdmin() {
             </Row>
             <Row className="product">
                 <Col xs={6} sm={6} md={4} lg={4}>
-                    <Image className="img-casher" src={Producto} roundedCircle></Image>
+                    <Image className="img-casher" src={Producto} roundedCircle alt=""></Image>
                 </Col>
                 <Col className="title-product" xs={6} sm={6} md={4} lg={4}>
                     <h1> Catalogo de Productos</h1>

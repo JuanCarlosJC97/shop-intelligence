@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import FormModalProduct from '../forms/formModalProduct/FormModalProduct'
-import Logo from '../../images/logo2.svg'
+import Logo from '../../images/logo.png'
 import Table from 'react-bootstrap/Table'
 import Products from '../../images/products.jpg'
 import './SupportProduct.css'
