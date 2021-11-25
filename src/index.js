@@ -9,7 +9,6 @@ import Homepage from './components/homepage/HomepageAdmin'
 // import SupportCasher from './components/supportCasher/SupportCasher';
 // import SupportCustomer from './components/supportCustomer/SupportCustomer';
 // import SupportProduct from './components/supportProduct/SupportProduct';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -33,7 +32,7 @@ ReactDOM.render(
     {/* <SupportCasher /> */}
     {/* <SupportCustomer /> */}
     {/* <SupportProduct /> */}
-    
+
 
   </React.StrictMode>,
   document.getElementById('root')
