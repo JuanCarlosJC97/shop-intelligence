@@ -5,8 +5,8 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Image } from 'react-bootstrap';
 import Logo2 from '../../images/logo2.svg';
 import Casher from '../../images/casher.jpg'
-import Cliente from '../../images/cleinte.jpg'
-import Producto from '../../images/productos.jpg'
+import Cliente from '../../images/customer.jpg'
+import Producto from '../../images/products.jpg'
 
 export default function HomepageAdmin() {
 
