@@ -2,16 +2,68 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
-import FormModalClient from '../forms/formModalClient/FormModalClient'
 import Logo from '../../images/logo.png'
 import Table from 'react-bootstrap/Table'
 import Customer from '../../images/customer.jpg'
 import './SupportCustomer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faTrashAlt, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export default function SupportCustomer() {
-    const [show, setShow] = useState(false);
+    const MySwal = withReactContent(Swal)
+
+    const FormModalCustomer = (title) => {
+        Swal.fire({
+            title: title,
+            html: `
+                <input type="text" id="clave" class="swal2-input" placeholder="No. de cliente">
+                <input type="text" id="name" class="swal2-input" placeholder="Nombre">
+                <input type="text" id="lastName" class="swal2-input" placeholder="Apellidos">
+                <input type="text" id="dateOfBirth" class="swal2-input" placeholder="Fecha de nacimiento">
+                <input type="text" id="numberPhone" class="swal2-input" placeholder="Telefono">
+                <input type="email" id="emailCustomer" class="swal2-input" placeholder="correo electronico">
+                `,
+            showCancelButton: true,
+            confirmButtonText: 'Guardar',
+            focusConfirm: false,
+            preConfirm: () => {
+                const clave = Swal.getPopup().querySelector('#clave').value
+                const name = Swal.getPopup().querySelector('#name').value
+                const lastName = Swal.getPopup().querySelector('#lastName').value
+                const dateOfBirth = Swal.getPopup().querySelector('#dateOfBirth').value
+                const numberPhone = Swal.getPopup().querySelector('#numberPhone').value
+                const emailCustomer = Swal.getPopup().querySelector('#emailCustomer').value
+                if (!clave || !name || !lastName || !dateOfBirth || !numberPhone || !emailCustomer) {
+                    Swal.showValidationMessage(`por favor completa los campos`)
+                }
+                return { clave: clave, nam: name, lastName: lastName, dateOfBirth: dateOfBirth, numberPhone: numberPhone, emailCustomer: emailCustomer }
+            }
+        }).then((result) => {
+            //mandar a llamar el fetch para enviar los datos al backend
+        })
+    }
+
+    const MyAlert = () => {
+        Swal.fire({
+            title: '¿Desea Eliminar este registro?',
+            text: "¡No podrás revertir esto!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Eliminado!',
+                    'Tu registro ha sido eliminado.',
+                    'success'
+                )
+            }
+        })
+    }
     return (
 
         <Container className="supportCustomer">
@@ -29,7 +81,7 @@ export default function SupportCustomer() {
             </Row>
             <Row className="justify-content-md-end">
                 <Col lg={11}>
-                    <Button className="mb-3 add-customer" variant="light" onClick={() => { setShow(true) }}>Nuevo Cliente <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
+                    <Button className="mb-3 add-customer" variant="light" onClick={() => { FormModalCustomer("Nuevo Cliente") }}>Nuevo Cliente <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
                 </Col>
             </Row>
             <Row>
@@ -55,8 +107,8 @@ export default function SupportCustomer() {
                                 <td>20/07/1998</td>
                                 <td>56-18-45-53-13</td>
                                 <td>Saraaresendiz@gmail.com</td>
-                                <td>✏️</td>
-                                <td><FontAwesomeIcon className="icon-trash" icon={faTrashAlt} /></td>
+                                <td><FontAwesomeIcon className="icon-trash" icon={faPencilAlt} onClick={() => { FormModalCustomer("Modificar Cliente") }} /></td>
+                                <td><FontAwesomeIcon className="icon-trash" icon={faTrashAlt} onClick={() => { MyAlert() }} /></td>
                             </tr>
                         </tbody>
                     </Table>
@@ -67,10 +119,6 @@ export default function SupportCustomer() {
                     <Image className="img-customer" src={Customer} roundedCircle></Image>
                 </Col>
             </Row>
-            <FormModalClient
-                show={show}
-                onHide={() => setShow(false)}
-            />
         </Container>
     )
 }

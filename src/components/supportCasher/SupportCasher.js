@@ -2,18 +2,72 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
-import FormModalCashers from '../forms/formModalCashers/FormModalCashers';
 import Table from 'react-bootstrap/Table'
 import Logo from '../../images/logo.png'
 import Casher from '../../images/casher.jpg'
 import './SupportCasher.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faTrashAlt, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
+export default function SupportCasher() {
+    const MySwal = withReactContent(Swal)
 
+    const FormModalCashers = (title) => {
+        Swal.fire({
+            title: title,
+            html: `
+                <input type="text" id="clave" class="swal2-input" placeholder="Clave de Cajero">
+                <input type="text" id="dateAdmission" class="swal2-input" placeholder="Fecha de ingreso">
+                <input type="text" id="name" class="swal2-input" placeholder="Nombre">
+                <input type="text" id="lastName" class="swal2-input" placeholder="Apellidos">
+                <input type="text" id="age" class="swal2-input" placeholder="Edad">
+                <input type="text" id="direcction" class="swal2-input" placeholder="Derección">
+                <input type="text" id="numberPhone" class="swal2-input" placeholder="Numero telefocnico">
+                <input type="email" id="emailCasher" class="swal2-input" placeholder="correo electronico">
+                `,
+            confirmButtonText: 'Guardar',
+            showCancelButton: true,
+            focusConfirm: false,
+            preConfirm: () => {
+                const clave = Swal.getPopup().querySelector('#clave').value
+                const dateAdmission = Swal.getPopup().querySelector('#dateAdmission').value
+                const name = Swal.getPopup().querySelector('#name').value
+                const lastName = Swal.getPopup().querySelector('#lastName').value
+                const age = Swal.getPopup().querySelector('#age').value
+                const direcction = Swal.getPopup().querySelector('#direcction').value
+                const numberPhone = Swal.getPopup().querySelector('#numberPhone').value
+                const emailCasher = Swal.getPopup().querySelector('#emailCasher').value
+                if (!clave || !dateAdmission || !name || !lastName || !age || !direcction || !numberPhone || !emailCasher ) {
+                    Swal.showValidationMessage(`por favor completa los campos`)
+                }
+                return { clave: clave, dateAdmission: dateAdmission, nam: name, lastName: lastName, age: age, direcction: direcction, numberPhone: numberPhone, emailCasher: emailCasher}
+            }
+        }).then((result) => {
+            //mandar a llamar el fetch para enviar los datos al backend
+        })
+    }
 
-export default function SupportCasher(props) {
-    const [show, setShow] = useState(false);
+    const MyAlert = () => {
+        Swal.fire({
+            title: '¿Desea Eliminar este registro?',
+            text: "¡No podrás revertir esto!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Eliminado!',
+                    'Tu registro ha sido eliminado.',
+                    'success'
+                )
+            }
+        })
+    }
     return (
         <Container className="supportCasher">
             <Row>
@@ -30,7 +84,7 @@ export default function SupportCasher(props) {
             </Row>
             <Row className="justify-content-md-end">
                 <Col lg={11}>
-                    <Button className="mb-3 add-casher" variant="light" onClick={() => { setShow(true) }}>Nuevo Cajero <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
+                    <Button className="mb-3 add-casher" variant="light" onClick={() => {FormModalCashers("Nuevo Cajero")}}>Nuevo Cajero <FontAwesomeIcon className="icon-plus" icon={faPlus} /></Button>
                 </Col>
             </Row>
             <Row>
@@ -60,8 +114,8 @@ export default function SupportCasher(props) {
                                 <td>Calle condesa</td>
                                 <td>55-67-87-35-23</td>
                                 <td>Sofiacastro@gmail.com</td>
-                                <td>✏️</td>
-                                <td><FontAwesomeIcon className="icon-trash" icon={faTrashAlt} /></td>
+                                <td><FontAwesomeIcon className="icon-trash" icon={faPencilAlt} onClick={() => { FormModalCashers("Modificar Cajero")}} /></td>
+                                <td> <FontAwesomeIcon className="icon-trash" icon={faTrashAlt} onClick={() => { MyAlert() }} /></td>
                             </tr>
                         </tbody>
                     </Table>
@@ -72,10 +126,6 @@ export default function SupportCasher(props) {
                     <Image className="img-casher" src={Casher} roundedCircle></Image>
                 </Col>
             </Row>
-            <FormModalCashers
-                show={show}
-                onHide={() => setShow(false)}
-            />
         </Container >
     )
 }
